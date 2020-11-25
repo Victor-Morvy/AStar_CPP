@@ -1,0 +1,1597 @@
+# depslib dependency file v1.0
+1605693791 source:c:\users\pichau\desktop\pigdev-master\src\main.cpp
+	"PIG.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\pig.h
+	"SDL.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+	"SDL_net.h"
+	"Tipos_PIG.h"
+	"PIGFuncoesBasicas.h"
+	"CPIGErros.h"
+	"CPoolNumeros.h"
+	"SDL_mixer.h"
+	"CGerenciadorJanelas.h"
+	"CGerenciadorSockets.h"
+	"CAssetLoader.h"
+	"COffscreenRenderer.h"
+	"CGerenciadorFontes.h"
+	"CVisual.h"
+	"CPIGLabel.h"
+	"CMouse.h"
+	"CGerenciadorObjetos.h"
+	"CGerenciadorTimers.h"
+	"CGerenciadorVideos.h"
+	"CGerenciadorAudios.h"
+	"CGerenciadorAnimacoes.h"
+	"CGerenciadorParticulas.h"
+	"CGerenciadorControles.h"
+	"CGerenciadorForms.h"
+	"CJogo.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_config.h
+	"SDL_platform.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\begin_code.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\close_code.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl_image\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1604635820 c:\users\pichau\desktop\pigdev-master\include\tipos_pig.h
+	"direct.h"
+	"unistd.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\pigfuncoesbasicas.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<string.h>
+	<time.h>
+	<vector>
+	<map>
+	<iostream>
+	<dirent.h>
+	<fstream>
+	<sstream>
+	<iomanip>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigerros.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpoolnumeros.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\sdl\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorjanelas.h
+	"CJanela.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cjanela.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorsockets.h
+	"CSocketTCP.h"
+	"CClienteTCP.h"
+	"CServidorTCP.h"
+	"CSocketUDP.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\csockettcp.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cclientetcp.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cservidortcp.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\csocketudp.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cassetloader.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\coffscreenrenderer.h
+	"CPilhaCoordenada.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpilhacoordenada.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorfontes.h
+	"CMapaCaracteres.h"
+	"CMapaCaracteresDinamicos.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cmapacaracteres.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cmapacaracteresdinamicos.h
+	"CPigStringFormatada.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigstringformatada.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cvisual.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpiglabel.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cmouse.h
+	"CPIGIcone.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigicone.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorobjetos.h
+	"CObjeto.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cobjeto.h
+	<algorithm>
+	<cmath>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadortimers.h
+	"CTimer.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\ctimer.h
+	<chrono>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorvideos.h
+	"CVideo.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cvideo.h
+	<libavfilter/avfilter.h>
+	<libavformat/avformat.h>
+	<libavcodec/avcodec.h>
+	<libavdevice/avdevice.h>
+	<libavutil/imgutils.h>
+	<libavutil/avstring.h>
+	<libavutil/time.h>
+	<libswresample/swresample.h>
+	<libswscale/swscale.h>
+	"CFilaPacotes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavfilter\avfilter.h
+	<stddef.h>
+	"libavutil/attributes.h"
+	"libavutil/avutil.h"
+	"libavutil/buffer.h"
+	"libavutil/dict.h"
+	"libavutil/frame.h"
+	"libavutil/log.h"
+	"libavutil/samplefmt.h"
+	"libavutil/pixfmt.h"
+	"libavutil/rational.h"
+	"libavfilter/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\attributes.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\avutil.h
+	"common.h"
+	"error.h"
+	"rational.h"
+	"version.h"
+	"macros.h"
+	"mathematics.h"
+	"log.h"
+	"pixfmt.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\common.h
+	<errno.h>
+	<inttypes.h>
+	<limits.h>
+	<math.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"attributes.h"
+	"macros.h"
+	"version.h"
+	"libavutil/avconfig.h"
+	"config.h"
+	"intmath.h"
+	"common.h"
+	"mem.h"
+	"internal.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\macros.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\version.h
+	"macros.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\avconfig.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\mem.h
+	<limits.h>
+	<stdint.h>
+	"attributes.h"
+	"error.h"
+	"avutil.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\error.h
+	<errno.h>
+	<stddef.h>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\rational.h
+	<stdint.h>
+	<limits.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\mathematics.h
+	<stdint.h>
+	<math.h>
+	"attributes.h"
+	"rational.h"
+	"intfloat.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\intfloat.h
+	<stdint.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\log.h
+	<stdarg.h>
+	"avutil.h"
+	"attributes.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\pixfmt.h
+	"libavutil/avconfig.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\buffer.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\dict.h
+	<stdint.h>
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\frame.h
+	<stddef.h>
+	<stdint.h>
+	"avutil.h"
+	"buffer.h"
+	"dict.h"
+	"rational.h"
+	"samplefmt.h"
+	"pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\samplefmt.h
+	<stdint.h>
+	"avutil.h"
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavfilter\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavformat\avformat.h
+	<time.h>
+	<stdio.h>
+	"libavcodec/avcodec.h"
+	"libavutil/dict.h"
+	"libavutil/log.h"
+	"avio.h"
+	"libavformat/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavcodec\avcodec.h
+	<errno.h>
+	"libavutil/samplefmt.h"
+	"libavutil/attributes.h"
+	"libavutil/avutil.h"
+	"libavutil/buffer.h"
+	"libavutil/cpu.h"
+	"libavutil/channel_layout.h"
+	"libavutil/dict.h"
+	"libavutil/frame.h"
+	"libavutil/hwcontext.h"
+	"libavutil/log.h"
+	"libavutil/pixfmt.h"
+	"libavutil/rational.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\cpu.h
+	<stddef.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\channel_layout.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\hwcontext.h
+	"buffer.h"
+	"frame.h"
+	"log.h"
+	"pixfmt.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavcodec\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavformat\avio.h
+	<stdint.h>
+	"libavutil/common.h"
+	"libavutil/dict.h"
+	"libavutil/log.h"
+	"libavformat/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavformat\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavdevice\avdevice.h
+	"version.h"
+	"libavutil/log.h"
+	"libavutil/opt.h"
+	"libavutil/dict.h"
+	"libavformat/avformat.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavdevice\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\opt.h
+	"rational.h"
+	"avutil.h"
+	"dict.h"
+	"log.h"
+	"pixfmt.h"
+	"samplefmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\imgutils.h
+	"avutil.h"
+	"pixdesc.h"
+	"rational.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\pixdesc.h
+	<inttypes.h>
+	"attributes.h"
+	"pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\avstring.h
+	<stddef.h>
+	<stdint.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libavutil\time.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libswresample\swresample.h
+	<stdint.h>
+	"libavutil/channel_layout.h"
+	"libavutil/frame.h"
+	"libavutil/samplefmt.h"
+	"libswresample/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libswresample\version.h
+	"libavutil/avutil.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libswscale\swscale.h
+	<stdint.h>
+	"libavutil/avutil.h"
+	"libavutil/log.h"
+	"libavutil/pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\video\libswscale\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cfilapacotes.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadoraudios.h
+	"CAudio.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\caudio.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadoranimacoes.h
+	"CAnimacao.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\canimacao.h
+	"CModoAnimacao.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cmodoanimacao.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorparticulas.h
+	"CGeradorParticulas.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgeradorparticulas.h
+	"CParticula.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cparticula.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorcontroles.h
+	"CControle.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\ccontrole.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cgerenciadorforms.h
+	"CPigForm.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigform.h
+	"CPigComponente.h"
+	"CPigBotao.h"
+	"CPigScrollBar.h"
+	"CPigCampoTextoESenha.h"
+	"CPigAreaDeTexto.h"
+	"CPigRadioBox.h"
+	"CPigCheckBox.h"
+	"CPigListBox.h"
+	"CPigDropDown.h"
+	"CPigGauge.h"
+	"CPigGaugeCircular.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigcomponente.h
+	"CVisual.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigbotao.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigscrollbar.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigcampotextoesenha.h
+	"CPigCaixaTexto.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigcaixatexto.h
+	"CPigComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigareadetexto.h
+	"CPigCaixaTexto.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigradiobox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpiglistaitemcomponente.h
+	"CPigItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigitemcomponente.h
+	"CPigIcone.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigcheckbox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpiglistbox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpigdropdown.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpiggauge.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cpiggaugecircular.h
+
+1601479984 c:\users\pichau\desktop\pigdev-master\include\cjogo.h
+
+1606332459 source:c:\users\pichau\desktop\algorithm pathfinding\src\main.cpp
+	"PIG.h"
+	<math.h>
+	<tgmath.h>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\pig.h
+	"SDL.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+	"SDL_net.h"
+	"Tipos_PIG.h"
+	"PIGFuncoesBasicas.h"
+	"CPIGErros.h"
+	"CPoolNumeros.h"
+	"SDL_mixer.h"
+	"CGerenciadorJanelas.h"
+	"CGerenciadorSockets.h"
+	"CAssetLoader.h"
+	"COffscreenRenderer.h"
+	"CGerenciadorFontes.h"
+	"CVisual.h"
+	"CPIGLabel.h"
+	"CMouse.h"
+	"CGerenciadorObjetos.h"
+	"CGerenciadorTimers.h"
+	"CGerenciadorVideos.h"
+	"CGerenciadorAudios.h"
+	"CGerenciadorAnimacoes.h"
+	"CGerenciadorParticulas.h"
+	"CGerenciadorControles.h"
+	"CGerenciadorForms.h"
+	"CJogo.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_config.h
+	"SDL_platform.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\begin_code.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\close_code.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl_image\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1604635820 c:\users\pichau\desktop\algorithm pathfinding\include\tipos_pig.h
+	"direct.h"
+	"unistd.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\pigfuncoesbasicas.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string>
+	<string.h>
+	<time.h>
+	<vector>
+	<map>
+	<iostream>
+	<dirent.h>
+	<fstream>
+	<sstream>
+	<iomanip>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigerros.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpoolnumeros.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\sdl\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorjanelas.h
+	"CJanela.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cjanela.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorsockets.h
+	"CSocketTCP.h"
+	"CClienteTCP.h"
+	"CServidorTCP.h"
+	"CSocketUDP.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\csockettcp.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cclientetcp.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cservidortcp.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\csocketudp.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cassetloader.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\coffscreenrenderer.h
+	"CPilhaCoordenada.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpilhacoordenada.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorfontes.h
+	"CMapaCaracteres.h"
+	"CMapaCaracteresDinamicos.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cmapacaracteres.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cmapacaracteresdinamicos.h
+	"CPigStringFormatada.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigstringformatada.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cvisual.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpiglabel.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cmouse.h
+	"CPIGIcone.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigicone.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorobjetos.h
+	"CObjeto.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cobjeto.h
+	<algorithm>
+	<cmath>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadortimers.h
+	"CTimer.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\ctimer.h
+	<chrono>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorvideos.h
+	"CVideo.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cvideo.h
+	<libavfilter/avfilter.h>
+	<libavformat/avformat.h>
+	<libavcodec/avcodec.h>
+	<libavdevice/avdevice.h>
+	<libavutil/imgutils.h>
+	<libavutil/avstring.h>
+	<libavutil/time.h>
+	<libswresample/swresample.h>
+	<libswscale/swscale.h>
+	"CFilaPacotes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavfilter\avfilter.h
+	<stddef.h>
+	"libavutil/attributes.h"
+	"libavutil/avutil.h"
+	"libavutil/buffer.h"
+	"libavutil/dict.h"
+	"libavutil/frame.h"
+	"libavutil/log.h"
+	"libavutil/samplefmt.h"
+	"libavutil/pixfmt.h"
+	"libavutil/rational.h"
+	"libavfilter/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\attributes.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\avutil.h
+	"common.h"
+	"error.h"
+	"rational.h"
+	"version.h"
+	"macros.h"
+	"mathematics.h"
+	"log.h"
+	"pixfmt.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\common.h
+	<errno.h>
+	<inttypes.h>
+	<limits.h>
+	<math.h>
+	<stdint.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"attributes.h"
+	"macros.h"
+	"version.h"
+	"libavutil/avconfig.h"
+	"config.h"
+	"intmath.h"
+	"common.h"
+	"mem.h"
+	"internal.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\macros.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\version.h
+	"macros.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\avconfig.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\mem.h
+	<limits.h>
+	<stdint.h>
+	"attributes.h"
+	"error.h"
+	"avutil.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\error.h
+	<errno.h>
+	<stddef.h>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\rational.h
+	<stdint.h>
+	<limits.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\mathematics.h
+	<stdint.h>
+	<math.h>
+	"attributes.h"
+	"rational.h"
+	"intfloat.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\intfloat.h
+	<stdint.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\log.h
+	<stdarg.h>
+	"avutil.h"
+	"attributes.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\pixfmt.h
+	"libavutil/avconfig.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\buffer.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\dict.h
+	<stdint.h>
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\frame.h
+	<stddef.h>
+	<stdint.h>
+	"avutil.h"
+	"buffer.h"
+	"dict.h"
+	"rational.h"
+	"samplefmt.h"
+	"pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\samplefmt.h
+	<stdint.h>
+	"avutil.h"
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavfilter\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavformat\avformat.h
+	<time.h>
+	<stdio.h>
+	"libavcodec/avcodec.h"
+	"libavutil/dict.h"
+	"libavutil/log.h"
+	"avio.h"
+	"libavformat/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavcodec\avcodec.h
+	<errno.h>
+	"libavutil/samplefmt.h"
+	"libavutil/attributes.h"
+	"libavutil/avutil.h"
+	"libavutil/buffer.h"
+	"libavutil/cpu.h"
+	"libavutil/channel_layout.h"
+	"libavutil/dict.h"
+	"libavutil/frame.h"
+	"libavutil/hwcontext.h"
+	"libavutil/log.h"
+	"libavutil/pixfmt.h"
+	"libavutil/rational.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\cpu.h
+	<stddef.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\channel_layout.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\hwcontext.h
+	"buffer.h"
+	"frame.h"
+	"log.h"
+	"pixfmt.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavcodec\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavformat\avio.h
+	<stdint.h>
+	"libavutil/common.h"
+	"libavutil/dict.h"
+	"libavutil/log.h"
+	"libavformat/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavformat\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavdevice\avdevice.h
+	"version.h"
+	"libavutil/log.h"
+	"libavutil/opt.h"
+	"libavutil/dict.h"
+	"libavformat/avformat.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavdevice\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\opt.h
+	"rational.h"
+	"avutil.h"
+	"dict.h"
+	"log.h"
+	"pixfmt.h"
+	"samplefmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\imgutils.h
+	"avutil.h"
+	"pixdesc.h"
+	"rational.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\pixdesc.h
+	<inttypes.h>
+	"attributes.h"
+	"pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\avstring.h
+	<stddef.h>
+	<stdint.h>
+	"attributes.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libavutil\time.h
+	<stdint.h>
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libswresample\swresample.h
+	<stdint.h>
+	"libavutil/channel_layout.h"
+	"libavutil/frame.h"
+	"libavutil/samplefmt.h"
+	"libswresample/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libswresample\version.h
+	"libavutil/avutil.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libswscale\swscale.h
+	<stdint.h>
+	"libavutil/avutil.h"
+	"libavutil/log.h"
+	"libavutil/pixfmt.h"
+	"version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\video\libswscale\version.h
+	"libavutil/version.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cfilapacotes.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadoraudios.h
+	"CAudio.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\caudio.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadoranimacoes.h
+	"CAnimacao.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\canimacao.h
+	"CModoAnimacao.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cmodoanimacao.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorparticulas.h
+	"CGeradorParticulas.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgeradorparticulas.h
+	"CParticula.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cparticula.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorcontroles.h
+	"CControle.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\ccontrole.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cgerenciadorforms.h
+	"CPigForm.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigform.h
+	"CPigComponente.h"
+	"CPigBotao.h"
+	"CPigScrollBar.h"
+	"CPigCampoTextoESenha.h"
+	"CPigAreaDeTexto.h"
+	"CPigRadioBox.h"
+	"CPigCheckBox.h"
+	"CPigListBox.h"
+	"CPigDropDown.h"
+	"CPigGauge.h"
+	"CPigGaugeCircular.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigcomponente.h
+	"CVisual.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigbotao.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigscrollbar.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigcampotextoesenha.h
+	"CPigCaixaTexto.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigcaixatexto.h
+	"CPigComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigareadetexto.h
+	"CPigCaixaTexto.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigradiobox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpiglistaitemcomponente.h
+	"CPigItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigitemcomponente.h
+	"CPigIcone.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigcheckbox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpiglistbox.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpigdropdown.h
+	"CPigListaItemComponente.h"
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpiggauge.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cpiggaugecircular.h
+
+1601479984 c:\users\pichau\desktop\algorithm pathfinding\include\cjogo.h
+
