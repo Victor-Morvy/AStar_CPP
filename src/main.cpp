@@ -62,6 +62,20 @@ public:
 
 enum tipo{walkable, blocked, aSpawn, bSpawn};
 
+/*
+int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+                                    };
+                                    */
+
 int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
                                      {0, 0, 0, 0, 0, 1, 1, 1, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
@@ -102,6 +116,8 @@ void desenhaCampo()
     }
 
 }
+
+
 
 std::vector<PathCell*> pathCellVector;
 
@@ -563,6 +579,7 @@ void printaFounded(PathCell* a)
 }
 
 int fonte;
+int fonte2;
 void desenhaEscritas()
 {
     int startY = 800;
@@ -582,13 +599,19 @@ void desenhaEscritas()
 
     //EscreverEsquerda(String, 100, 700, VERDE, fonte, 0);
 
+    SDL_Color color = PRETO;
     for(int i = pathCellVector.size()-1; i>=0; i--)
     {
         PathCell* n = pathCellVector.at(i);
 
 
         if(!pathCellVector.at(i)->parent)
+        {
+
+
             break;
+        }
+
 
         int tamyy = 775;
         //PathCell* n = pathCellVector.at(pathCellVector.size()-11);
@@ -601,8 +624,6 @@ void desenhaEscritas()
 
         //std::cout << n->pos.x << std::endl;
 
-        SDL_Color color = PRETO;
-
         int compensarX = -3;
         int compensarY = 10;
 
@@ -613,6 +634,25 @@ void desenhaEscritas()
 
 
     }
+
+    //ESCREVER NO A E NO B TA BUGADO
+    int cX = 28;
+    int cY = 15;
+    int tamSpr = 64;
+
+
+    PathCell* sA = getSpawn('a');
+    PathCell* sB = getSpawn('b');
+
+    char texto[5];
+
+
+
+    sprintf(texto, "A");
+    EscreverCentralizada(texto, (tamSpr/2) + sA->pos.x * tamSpr + cX, cY + 800 - sA->pos.y * tamSpr, color, fonte2);
+
+    sprintf(texto, "B");
+    EscreverCentralizada(texto, (tamSpr/2) + sB->pos.x * tamSpr + cX, cY + 800 - sB->pos.y * tamSpr, color, fonte2);
 
 
     /*
@@ -717,6 +757,7 @@ void configuracoesIniciais()
     SetPivoObjeto(obj, (200/2), 250/2);
 
     fonte = CriaFonteNormal("..\\fontes\\arial.ttf", 12, PRETO);
+    fonte2 = CriaFonteNormal("..\\fontes\\arial.ttf", 26, CINZA);
 
     anguloObj = 0;
 }
@@ -753,10 +794,6 @@ int main( int argc, char* args[] ){
 
             ReiniciaTimer(timerDesenho);
         }
-
-
-
-
     }
 
     //o jogo será encerrado
