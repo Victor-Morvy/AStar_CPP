@@ -38,6 +38,11 @@ public:
         parentId = -1;
     }
 
+    ~PathCell()
+    {
+        //std::cout << "deletado!\n" ;
+    }
+
     int whatAmI;
 
     Vec2D pos;
@@ -83,8 +88,8 @@ int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 2, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                                     {0, 2, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
                                     };
 
@@ -120,6 +125,20 @@ void desenhaCampo()
 
 
 std::vector<PathCell*> pathCellVector;
+
+void resetPathVector()
+{
+
+    for(auto n : pathCellVector)
+    {
+        //std::cout << "ASDASD " << n->F << "| tam: " << pathCellVector.size() << std::endl;
+        delete n;
+    }
+
+
+
+    pathCellVector.clear();
+}
 
 bool checkNodeExists(int nodeX, int nodeY)
 {
@@ -227,6 +246,15 @@ int createNeighborNode(PathCell* theNode)
                         pNow->parent = theNode;
                     }
 
+                    /*
+                    if(pNow->F <= 14)
+                    {
+                        //std::cout << "Passou! Achou!\n";
+                        theNode->isVisited = true;
+                        return 1;//achou!
+
+                    }
+                    */
 
                     /*
 
@@ -278,7 +306,7 @@ int createNeighborNode(PathCell* theNode)
                     {
                         //std::cout << "Passou! Achou!\n";
                         theNode->isVisited = true;
-                        return 1;//achou!
+                        //return 1;//achou!
 
                     }
 
@@ -419,7 +447,7 @@ PathCell* getMenorPeso()
                 {
                     p = pathCellVector.at(i);
                 }
-                if(n->F == p->F && n->H < p->H)
+                else if(n->F == p->F && n->G < p->G)
                     p = pathCellVector.at(i);
             }
 
@@ -717,29 +745,70 @@ void desenhar()
     EncerraDesenho();
 }
 
+void andarObj(PathCell* pObj, int inY, int inX);
 void verificarTeclado()
 {
+    PathCell* sA = getSpawn('a');
+    PathCell* sB = getSpawn('b');
+
+    if(!sA)
+    {
+        std::cout << "a é nullptr\n";
+        return;
+    }else if(!sB)
+    {
+        std::cout << "b é nullptr\n";
+        return;
+    }
 
     double velocidade = 1.3;
     if(meuTeclado[TECLA_a])
-        posX -= velocidade;
+        andarObj(sA, 0, -1);
 
     if(meuTeclado[TECLA_d])
-        posX += velocidade;
+        andarObj(sA, 0, 1);
 
     if(meuTeclado[TECLA_w])
-        posY += velocidade;
+        andarObj(sA, -1, 0);
 
     if(meuTeclado[TECLA_s])
-        posY -= velocidade;
+        andarObj(sA, 1, 0);
+}
+
+void andarObj(PathCell* pObj, int inY, int inX)
+{
+    int newX = pObj->pos.x + inX;
+    int newY = pObj->pos.y + inY;
+
+    int tmp;
+
+    tmp = campo[pObj->pos.y][pObj->pos.x];
+    campo[pObj->pos.y][pObj->pos.x] = 0;
+    campo[newY][newX] = tmp;
+
+    /*
+
+    if(newX > 0 || newX < TAMXCAMPO - 2 || newY > 0 || newY < TAMYCAMPO - 2)
+    {
+        tmp = campo[pObj->pos.x][pObj->pos.y];
+        campo[pObj->pos.x][pObj->pos.y] = 0;
+        campo[newY][newX] = tmp;
+    }
+    else
+    {
+
+    }
+    */
+
+
 }
 
 void configuracoesIniciais()
 {
     iniciaNodeMap();
 
-    findPath((getSpawn('a')), (getSpawn('b')));
-    std::cout << "inicia jogo\n";
+
+    //std::cout << "inicia jogo\n";
 
     //criando o jogo (aplicação)
     CriaJogo("Meu Jogo");
@@ -766,9 +835,12 @@ int main( int argc, char* args[] ){
 
     configuracoesIniciais();
 
+
     //loop principal do jogo
     while(JogoRodando())
     {
+
+
         fps = GetFPS();
 
         //pega um evento que tenha ocorrido desde a última passada do loop
@@ -779,7 +851,7 @@ int main( int argc, char* args[] ){
 
         if(TempoDecorrido(timerGeral) >= BASE60FPS)
         {
-            verificarTeclado();
+
 
             SetAnguloObjeto(obj, anguloObj);
 
@@ -790,10 +862,19 @@ int main( int argc, char* args[] ){
 
         if(TempoDecorrido(timerDesenho) >= BASE60FPS)
         {
+            iniciaNodeMap();
+            findPath((getSpawn('a')), (getSpawn('b')));
+
+            verificarTeclado();
+
             desenhar();
+
+            resetPathVector();
 
             ReiniciaTimer(timerDesenho);
         }
+
+
     }
 
     //o jogo será encerrado
