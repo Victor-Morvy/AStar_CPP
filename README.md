@@ -11,7 +11,7 @@ E utilizado a bibliotéca gráfica PIG: https://github.com/PIGDevUff/PigDev, par
 Através da biblioteca gráfica PIG, demonstrar valores de forma que o usuário leia com facilidade os resultados.
 
 ## Como utilizar
-Copie o código da biblioteca gráfica PIG, e substitua as pastas 'src'.
+Copie o código da biblioteca gráfica PIG, e substitua as pastas 'src', abra o arquivo do code::blocks referente ao seu SO.
 
 ## Como mudar o campo
 Procure por "campo[TAMYCAMPO][TAMXCAMPO]" no main.cpp, você vai encontrar o campo:
