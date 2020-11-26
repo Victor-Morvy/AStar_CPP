@@ -86,9 +86,9 @@ int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
-                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 2, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
                                     };
@@ -256,21 +256,7 @@ int createNeighborNode(PathCell* theNode)
                     }
                     */
 
-                    /*
 
-                    int distNowToB = distanciaEntre(*pathp, *pb);
-                    valToReturn = distNowToB;
-
-                    //pathCellVector[newPathCellIndex].parentId
-
-                    pathp->parent = theNode;
-                    std::cout << "Pos TheNode x: " << pathp->parent->pos.x << ", y: " << pathp->parent->pos.y << std::endl;
-
-                    pathp->G = distanciaEntre(*pathp, *pa);
-                    pathp->H = distNowToB;
-                    pathp->somaPeso();
-                    //pathCellVector[newPathCellIndex]->parent = theNode;
-                    */
                 }
                 else if(!checkNodeExists(nowX, nowY))
                 {
@@ -305,7 +291,7 @@ int createNeighborNode(PathCell* theNode)
                     if(pathCellVector[newPathCellIndex]->F <= 14)
                     {
                         //std::cout << "Passou! Achou!\n";
-                        theNode->isVisited = true;
+                        //theNode->isVisited = true;
                         //return 1;//achou!
 
                     }
@@ -427,6 +413,7 @@ void iniciaNodeMap()
     }
 }
 
+
 PathCell* getMenorPeso()
 {
     //std::cout << "ccccc\n";
@@ -447,8 +434,15 @@ PathCell* getMenorPeso()
                 {
                     p = pathCellVector.at(i);
                 }
-                else if(n->F == p->F && n->G < p->G)
+                else if(n->F == p->F && n->H < p->H)
                     p = pathCellVector.at(i);
+
+                //else if(n->F == p->F && n->H < p->H)
+                //    p = pathCellVector.at(i);
+
+                //int G = 0; // distance from starting node
+                //int H = 0; //distance from end node
+                //int F = 0; //G+H
             }
 
         }
@@ -469,8 +463,6 @@ int findPath(PathCell* a, PathCell* b)
 
     while(run)
     {
-
-
         if(createNeighborNode(pa))
         {
             //std::cout << "esta aqui\n " ;
@@ -557,34 +549,9 @@ void desenhaPath()
     int pathCellVecSize = pathCellVector.size();
 
 
-    PathCell* sss = pathCellVector[pathCellVecSize-1];
+    //PathCell* sss = pathCellVector[pathCellVecSize-1];
 
-    //std::cout << "tamanho cel vec size aaa: " << pathCellVecSize << std::endl;
-
-    //cor = AMARELO;
-
-    /*
-    for(int i = pathCellVecSize - 1; i >= 0 ; i--)
-    {
-            //sss = &pathCellVecSize[i];
-            if(pathCellVector[i].parent != nullptr && pathCellVector[i].whatAmI == walkable)
-            {
-
-                if(sss->parent == pathCellVector[i].parent)
-                {
-                    DesenhaRetangulo(sss->pos.x*tam + tam/2, nowY - sss->pos.y * tam, tam-5, tam-5, cor, 0);
-
-                    std::cout << sss->pos.x << " " << sss->pos.y << std::endl;
-
-                    sss = sss->parent;
-                }
-            }
-            else
-            {
-                break;
-            }
-    }
-    */
+    PathCell* sss = getMenorPeso();
 
     printaFounded(sss);
 }
@@ -762,6 +729,7 @@ void verificarTeclado()
     }
 
     double velocidade = 1.3;
+
     if(meuTeclado[TECLA_a])
         andarObj(sA, 0, -1);
 
@@ -773,6 +741,18 @@ void verificarTeclado()
 
     if(meuTeclado[TECLA_s])
         andarObj(sA, 1, 0);
+
+    if(meuTeclado[TECLA_ESQUERDA])
+        andarObj(sB, 0, -1);
+
+    if(meuTeclado[TECLA_DIREITA])
+        andarObj(sB, 0, 1);
+
+    if(meuTeclado[TECLA_CIMA])
+        andarObj(sB, -1, 0);
+
+    if(meuTeclado[TECLA_BAIXO])
+        andarObj(sB, 1, 0);
 }
 
 void andarObj(PathCell* pObj, int inY, int inX)
