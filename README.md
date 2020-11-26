@@ -12,6 +12,8 @@ Através da biblioteca gráfica PIG, demonstrar valores de forma que o usuário 
 
 ## Como utilizar
 Copie o código da biblioteca gráfica PIG, e substitua as pastas 'src', abra o arquivo do code::blocks referente ao seu SO.
+- W, A, S, D - Move o ponto A no campo;
+- setas - Move o ponto B no campo;
 
 ## Como mudar o campo
 Procure por "campo[TAMYCAMPO][TAMXCAMPO]" no main.cpp, você vai encontrar o campo:

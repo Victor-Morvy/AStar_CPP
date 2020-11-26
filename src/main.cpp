@@ -762,9 +762,12 @@ void andarObj(PathCell* pObj, int inY, int inX)
 
     int tmp;
 
-    tmp = campo[pObj->pos.y][pObj->pos.x];
-    campo[pObj->pos.y][pObj->pos.x] = 0;
-    campo[newY][newX] = tmp;
+    if(newX >= 0 && newX <= TAMXCAMPO-1 && newY >= 0 && newY <= TAMYCAMPO-1 && campo[newY][newX] == 0)
+    {
+        tmp = campo[pObj->pos.y][pObj->pos.x];
+        campo[pObj->pos.y][pObj->pos.x] = 0;
+        campo[newY][newX] = tmp;
+    }
 
     /*
 
