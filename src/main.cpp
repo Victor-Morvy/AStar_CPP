@@ -80,7 +80,18 @@ int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
                                     };
                                     */
-
+int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
+                                     {0, 0, 0, 0, 0, 1, 1, 1, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
+                                     {0, 0, 1, 1, 1, 0, 0, 1, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
+                                     {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 1, 1, 1, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 1, 0, 0, 0},
+                                     {0, 2, 0, 0, 0, 0, 0, 0, 0, 0},
+                                     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+                                    };
+/*
 int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
                                      {0, 0, 0, 0, 0, 1, 1, 1, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
@@ -92,6 +103,130 @@ int campo[TAMYCAMPO][TAMXCAMPO] =   {{0, 0, 0, 0, 0, 0, 0, 0, 0, 3},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                                      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
                                     };
+*/
+
+
+
+int fonte;
+int fonte2;
+void desenhaEscritasQuadrado(int _posX, int _posY, char *text1, char *text2, char *text3)
+{
+    int tam2 = 64, tam = 1;
+    Vec2D posG = Vec2D(21, 43); //distance from starting node
+    Vec2D posH = Vec2D(43, 43); //distance from ending node
+    Vec2D posF = Vec2D(32, 21); //total distance
+
+    _posX += -62/2;
+    _posY += -800+62/2;
+
+    char textoEsq[5];
+    char textoDir[5];
+    char textoCentro[5];
+
+    int tamyy = 775;
+    //PathCell* n = pathCellVector.at(pathCellVector.size()-11);
+
+    //std::cout << n->H << endl;
+
+    PIG_Cor color;
+
+    color = PRETO;
+
+    sprintf(textoEsq, "%s", text1);// distance from starting node
+    sprintf(textoDir, "%s", text2);//distance from end node
+    sprintf(textoCentro, "%s", text3);//G+H
+
+    //std::cout << n->pos.x << std::endl;
+
+    int compensarX = -3;
+    int compensarY = 7;
+
+    EscreverCentralizada(textoEsq, compensarX+(tam2/2) + _posX * tam + posG.x, compensarY+ tamyy - (_posY * tam) + posG.y, color, fonte);
+    EscreverCentralizada(textoDir, compensarX+(tam2/2) + _posX * tam + posH.x, compensarY+ tamyy - (_posY * tam) + posH.y, color, fonte);
+    EscreverCentralizada(textoCentro, compensarX + (tam2/2) + _posX * tam + posF.x, compensarY+ tamyy - (_posY * tam)  + posF.y, color, fonte);
+}
+
+void escreveLegenda(char* text, int x, int y)
+{
+    PIG_Cor color;
+    color = PRETO;
+
+    EscreverEsquerda(text, x, y, color, fonte);
+
+}
+
+void desenhaLegenda()
+{
+    int paddingX = 800, paddingY = 800-20, paddingBg = 800;
+
+    int tam = 64;
+
+    int tamBgX = 7*64;
+    int tamBgY = 10*64;
+
+    PIG_Cor cor;
+
+    cor = CINZA;
+    DesenhaRetangulo(paddingBg-10, paddingBg+64, -tamBgY-54, tamBgX-5, cor, 0);
+
+    int kx = 15;
+    int sumYPadding = 10;
+
+    cor = VERDE;
+    DesenhaRetangulo(paddingX, paddingY, tam-5, tam-5, cor, 0);
+    desenhaEscritasQuadrado(paddingX, paddingY, "i", "j", "k");
+    escreveLegenda("Node não visitado.", paddingX + 70, sumYPadding + paddingY + 44 - kx);
+    escreveLegenda("Passivo de alteração de valores por vizinhos vizitados.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2);
+
+    cor = VERMELHO;
+    DesenhaRetangulo(paddingX, paddingY-74, tam-5, tam-5, cor, 0);
+    desenhaEscritasQuadrado(paddingX, paddingY+74, "i", "j", "k");
+    int t = 1;
+    escreveLegenda("Node visitado.", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+    escreveLegenda("Node trvado, não é passivo de alteração de ", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2- 74 * t);
+    escreveLegenda("valores por vizinhos vizitados.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 3 - 74 * t);
+
+    cor = BRANCO;
+    DesenhaRetangulo(paddingX, paddingY-74*2, tam-5, tam-5, cor, 0);
+     t = 2;
+    escreveLegenda("Possíveis tiles.", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+    escreveLegenda("Tiles que não foram criados nodes, é possível visita-los.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2- 74 * t);
+
+    cor = PRETO;
+    DesenhaRetangulo(paddingX, paddingY-74*3, tam-5, tam-5, cor, 0);
+     t = 3;
+    escreveLegenda("Caminho bloqueado.", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+    escreveLegenda("Caminhos bloqueados, não é possível visita-los.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2- 74 * t);
+
+    cor = AMARELO;
+    DesenhaRetangulo(paddingX, paddingY-74*4, tam-5, tam-5, cor, 0);
+    desenhaEscritasQuadrado(paddingX, paddingY+74*4, "i", "j", "k");
+     t = 4;
+    escreveLegenda("Caminho encontrado!", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+    escreveLegenda("Melhor caminho encontrado.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2- 74 * t);
+
+    cor = AZUL;
+    DesenhaRetangulo(paddingX, paddingY-74*5, tam-5, tam-5, cor, 0);
+     t = 5;
+    escreveLegenda("Pontos", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+    escreveLegenda("O algorítmo encontra o caminho de A para B.", paddingX + 70, sumYPadding + paddingY + 44 - kx * 2- 74 * t);
+
+    //sprintf(textoEsq, "%i", n->G);// distance from starting node
+    //sprintf(textoDir, "%i", n->H);//distance from end node
+    //sprintf(textoCentro, "%i", n->F);//G+H
+
+    t = 6;
+    EscreverCentralizada("i", paddingX + 72/2, paddingY - 72*t);
+    escreveLegenda("Distância do ponto inicial", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+
+    t = 7;
+    EscreverCentralizada("j", paddingX + 72/2, paddingY - 72*t);
+    escreveLegenda("Distância do ponto final", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+
+    t = 8;
+    EscreverCentralizada("k", paddingX + 72/2, paddingY - 72*t);
+    escreveLegenda("Somatória da distância do ponto inicial e final.", paddingX + 70, sumYPadding + paddingY + 44 - kx - 74 * t);
+}
 
 void desenhaCampo()
 {
@@ -573,8 +708,6 @@ void printaFounded(PathCell* a)
 
 }
 
-int fonte;
-int fonte2;
 void desenhaEscritas()
 {
     int startY = 800;
@@ -685,6 +818,8 @@ void desenhar()
 
     desenhaEscritas();
 
+    desenhaLegenda();
+
     //aqui o evento deve ser tratado e as coisas devem ser atualizadas
     /*if(meuTeclado[TECLA_BARRAESPACO])
     {
@@ -702,7 +837,7 @@ void desenhar()
 
     //EscreverEsquerda(String, 100, 700, VERDE, fonte, 0);
 
-    DesenhaObjeto(obj);
+    //DesenhaObjeto(obj);
     //todas as chamadas de desenho devem ser feitas aqui na ordem desejada
 
 
