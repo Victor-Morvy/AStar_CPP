@@ -12,7 +12,6 @@ libWindows/*
 *.aif
 *.midi
 *.bmp
-*.png
 *.jpg
 *.jpeg
 *.o
