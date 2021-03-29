@@ -5,10 +5,6 @@ Algorítmo IA - A*(star) pathfinding em CPP
 
 ![alt tag](https://github.com/Victor-Morvy/AStar_CPP/blob/main/legenda.png?raw=true)
 
-i = Função de avaliação
-J = Função Heurística
-k = Função de custo acumulado
-
 ## Introdução
 Utilizando estudos, foi desenvolvido um algorítmo A*(star) pathfinding, usado geralmente em jogos, onde o objetivo é achar o caminho mais rápido de A para B, mesmo com obstáculos, realiza uma busca em forma de grafo do caminho mais curto entre dois pontos.
 E utilizado a bibliotéca gráfica PIG: https://github.com/PIGDevUff/PigDev, para facilitar a leitura para o usuário.
