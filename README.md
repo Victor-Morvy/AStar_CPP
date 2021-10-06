@@ -3,7 +3,7 @@ Algorítmo IA - A*(star) pathfinding em CPP
 
 ![alt tag](https://github.com/Victor-Morvy/AStar_CPP/blob/main/image.png?raw=true)
 
-f(x) = h(x) + g(x), onde 'h' é a distância percorrida até o ponto e 'g' é a distância do ponto atual, até o ponto final.
+f(x) = h(x) + g(x), onde 'h' é a função heurística, e 'g' o custo acumulado.
 
 ## Introdução
 Utilizando estudos, foi desenvolvido um algorítmo A*(star) pathfinding, usado geralmente em jogos, onde o objetivo é achar o caminho mais rápido de A para B, mesmo com obstáculos, realiza uma busca em forma de grafo do caminho mais curto entre dois pontos.
